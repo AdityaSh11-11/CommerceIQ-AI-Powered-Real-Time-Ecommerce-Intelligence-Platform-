@@ -334,6 +334,6 @@ CommerceIQ was developed as a portfolio project showcasing modern Business Intel
 
 ---
 
-# 📄 License
+# License
 
 This project is intended for educational and portfolio purposes.
