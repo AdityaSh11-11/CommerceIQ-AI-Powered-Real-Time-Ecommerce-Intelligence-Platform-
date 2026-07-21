@@ -1,0 +1,672 @@
+/* =====================================
+   GLOBAL SETTINGS
+===================================== */
+
+html, body, [class*="css"] {
+
+    font-family: "Inter", "Segoe UI", sans-serif;
+
+}
+
+
+.stApp {
+
+    background:
+    radial-gradient(circle at top left,#1e40af 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#047857 0%,transparent 35%),
+    linear-gradient(135deg,#020617,#0f172a);
+
+    color:white;
+
+}
+
+
+
+/* Main container spacing */
+
+.block-container {
+
+    padding-top:40px !important;
+
+    padding-left:50px !important;
+
+    padding-right:50px !important;
+
+    max-width:1400px;
+
+}
+
+
+
+/* Remove Streamlit branding */
+
+#MainMenu {
+
+    visibility:hidden;
+
+}
+
+footer {
+
+    visibility:hidden;
+
+}
+
+
+
+/* =====================================
+        HERO
+===================================== */
+
+
+.hero {
+
+    width:100%;
+
+    min-height:220px;
+
+    padding:45px 40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(59,130,246,.25),
+        rgba(16,185,129,.15)
+    );
+
+
+    border:1px solid rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(15px);
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35);
+
+
+    margin-bottom:40px;
+
+}
+
+
+.hero h1 {
+
+    font-size:45px;
+
+    text-align:center;
+
+    margin:0;
+
+    line-height:1.2;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #60a5fa,
+        #34d399
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color:transparent;
+
+
+}
+
+
+.hero p {
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    text-align:center;
+
+    color:#cbd5e1;
+
+}
+
+
+
+/* =====================================
+        SECTION SPACING
+===================================== */
+
+
+h2 {
+
+    margin-top:35px !important;
+
+    margin-bottom:25px !important;
+
+}
+
+
+
+/* =====================================
+        STREAMLIT COLUMN FIX
+===================================== */
+
+
+[data-testid="column"] {
+
+    display:flex;
+
+    align-items:stretch;
+
+}
+
+
+
+/* =====================================
+        STATUS CARDS
+===================================== */
+
+
+.metric {
+
+
+    width:100%;
+
+
+    min-height:160px;
+
+
+    padding:25px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+
+    border-radius:20px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(15px);
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.3);
+
+
+    overflow:hidden;
+
+
+    transition:.3s ease;
+
+
+}
+
+
+.metric:hover {
+
+
+    transform:translateY(-8px);
+
+
+    border-color:#38bdf8;
+
+
+}
+
+
+
+.metric h4 {
+
+
+    font-size:16px;
+
+
+    color:#94a3b8;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+.metric h2 {
+
+
+    margin:0 !important;
+
+
+    font-size:32px;
+
+
+    color:#38bdf8;
+
+
+}
+
+
+
+/* =====================================
+        FEATURE SECTION
+===================================== */
+
+
+.feature {
+
+
+    width:100%;
+
+
+    height:260px;
+
+
+    padding:28px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+
+    justify-content:flex-start;
+
+
+    border-radius:22px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    backdrop-filter:blur(15px);
+
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.35);
+
+
+
+    overflow:hidden;
+
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+.feature:hover {
+
+
+    transform:translateY(-10px);
+
+
+    border-color:#34d399;
+
+
+}
+
+
+
+.feature h3 {
+
+
+    margin:0 0 20px 0;
+
+
+    font-size:22px;
+
+
+    color:#38bdf8;
+
+
+}
+
+
+
+.feature p {
+
+
+    margin:0;
+
+
+    color:#cbd5e1;
+
+
+    font-size:16px;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+/* =====================================
+        RESPONSIVE DESIGN
+===================================== */
+
+
+@media(max-width:1000px){
+
+
+    .block-container {
+
+        padding-left:20px !important;
+
+        padding-right:20px !important;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:32px;
+
+    }
+
+
+    .feature {
+
+        height:auto;
+
+        min-height:220px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .hero {
+
+        padding:30px 20px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:26px;
+
+    }
+
+
+    .hero p {
+
+        font-size:15px;
+
+    }
+
+
+}
+
+
+
+/* =====================================
+        SMOOTH ANIMATION
+===================================== */
+
+
+.metric,
+.feature,
+.hero {
+
+
+    animation:
+
+    fade .7s ease;
+
+
+}
+
+
+
+@keyframes fade {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+
+.footer {
+
+    margin-top:80px;
+
+    padding:40px;
+
+    text-align:center;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(30,41,59,0.8),
+        rgba(15,23,42,0.9)
+    );
+
+
+    border-radius:25px;
+
+
+    border:
+
+    1px solid
+    rgba(255,255,255,0.12);
+
+
+    backdrop-filter:
+
+    blur(15px);
+
+
+}
+
+
+
+.footer h3 {
+
+
+    font-size:28px;
+
+
+    font-weight:800;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #60a5fa,
+        #c084fc
+    );
+
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+
+    color:transparent;
+
+
+}
+
+
+
+.footer p {
+
+
+    color:#cbd5e1;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+.footer-links {
+
+
+    color:#94a3b8;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+.footer-links span {
+
+
+    color:#38bdf8;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.copyright {
+
+
+    font-size:13px !important;
+
+
+    color:#64748b !important;
+
+
+}
+
+/* =====================================
+   CENTER SECTION HEADINGS
+===================================== */
+
+
+.section-title {
+
+    text-align:center;
+
+    font-size:34px;
+
+    font-weight:800;
+
+    margin-top:45px;
+
+    margin-bottom:35px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #60a5fa,
+        #c084fc
+    );
+
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+.hero h1 {
+
+    font-size:52px;
+
+    text-align:center;
+
+}
+
+
+.hero h2 {
+
+    text-align:center;
+
+    color:#e2e8f0;
+
+    font-size:28px;
+
+}
+
+
+.hero p {
+
+    text-align:center;
+
+}
