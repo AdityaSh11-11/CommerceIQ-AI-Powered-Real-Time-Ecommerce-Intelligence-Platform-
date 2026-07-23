@@ -140,7 +140,6 @@ CommerceIQ/
 ├── database.py
 ├── config.py
 │
-├── seed_data.py
 ├── style.css
 ├── dashboard_style.css
 │
@@ -251,9 +250,7 @@ streamlit run dashboard.py
 
 The project includes multiple dashboards:
 
-- Executive Dashboard
-- Sales Analytics
-- AI Business Insights
+![Dashboard](preview/preview1.png)
 
 ---
 
