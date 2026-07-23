@@ -93,34 +93,6 @@ The platform calculates business KPIs including:
 
 ---
 
-# Project Architecture
-
-```
-                    CommerceIQ
-
-                  Streamlit UI
-                        │
- ┌───────────────┬──────────────┬──────────────┐
- │               │              │
-Executive     Sales         AI Insights
-Dashboard     Dashboard
-
-                        │
-                  SQLAlchemy ORM
-                        │
-                    SQLite Database
-                        │
-    Customers │ Products │ Orders │ Order Items
-                        │
-             Live Transaction Engine
-                        │
-               Business Analytics Engine
-                        │
-                  Machine Learning
-```
-
----
-
 # Project Structure
 
 ```
