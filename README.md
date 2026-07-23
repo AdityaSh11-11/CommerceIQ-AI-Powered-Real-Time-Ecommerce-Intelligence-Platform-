@@ -250,7 +250,13 @@ streamlit run dashboard.py
 
 The project includes multiple dashboards:
 
+![preview](images/preview.png)
 ![preview](images/preview_1.png)
+![preview](images/preview_2.png)
+![preview](images/preview_3.png)
+![preview](images/preview_4.png)
+![preview](images/preview_5.png)
+
 
 ---
 
